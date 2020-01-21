@@ -21,7 +21,7 @@ How to Use:
 
 2 - Install the required libraries.
 
-3 - Find your camera ip and change it.
+3 - Find your camera ip and change it in the code.
 
 4 - Run facerec_ipcamera_knn.py.
 
