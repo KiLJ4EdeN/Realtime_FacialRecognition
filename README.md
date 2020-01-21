@@ -23,7 +23,9 @@ How to Use:
 
 3 - Find your camera ip and change it in the code.
 
-4 - Run facerec_ipcamera_knn.py.
+4 - To add training examples of your own, Go to knn_examples/train,
+each folder represents a person name and inside that folder will be images for the knn training.
+5 - Run facerec_ipcamera_knn.py.
 
-5 - Use q to quit the stream anytime.
+6 - Use q to quit the stream anytime.
 
