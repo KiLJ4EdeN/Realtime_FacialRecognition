@@ -21,7 +21,7 @@ How to Use:
 
 2 - Install the required libraries.
 
-3 - Find your camera ip and change it in the code.
+3 - Find your camera ip and change it in the code, in a rare case when opencv can't crack open your ip camera url use specific rep for acquiring images from ip cams using urrlib at https://github.com/KiLJ4EdeN/IPCAM_urllib.
 
 4 - To add training examples of your own, Go to knn_examples/train,
 each folder name represents a person and inside that folder will be images related to that person for the knn  to be trained.
