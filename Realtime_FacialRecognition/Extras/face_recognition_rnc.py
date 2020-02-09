@@ -76,6 +76,9 @@ print("Number of faces detected: ", no)
 # Predict all the faces in the test image using the trained classifier
 print("Found:")
 for i in range(no):
-    test_image_enc = face_recognition.face_encodings(test_image)[i]
-    name = clf.predict([test_image_enc])
-    print(*name)
+    test_image_enc = face_recognition.face_encodings(test_image, known_face_locations=face_locations)[i]
+    try:
+            name = clf.predict(test_image_enc)
+            print(*name)
+    except ValueError:
+            print('No matches Found')
