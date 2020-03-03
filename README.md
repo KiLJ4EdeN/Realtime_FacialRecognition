@@ -2,6 +2,9 @@
 Real time Facial Recognition using the face_recognition module and ip cameras.
 
 
+![Python application](https://github.com/KiLJ4EdeN/Realtime_FacialRecognition/workflows/Python%20application/badge.svg)[![License](https://img.shields.io/github/license/KiLJ4EdeN/Realtime_FacialRecognition)](https://img.shields.io/github/license/KiLJ4EdeN/Realtime_FacialRecognition) [![Version](https://img.shields.io/github/v/tag/KiLJ4EdeN/Realtime_FacialRecognition)](https://img.shields.io/github/v/tag/KiLJ4EdeN/Realtime_FacialRecognition) [![Code size](https://img.shields.io/github/languages/code-size/KiLJ4EdeN/Realtime_FacialRecognition)](https://img.shields.io/github/languages/code-size/KiLJ4EdeN/Realtime_FacialRecognition) [![Repo size](https://img.shields.io/github/repo-size/KiLJ4EdeN/Realtime_FacialRecognition)](https://img.shields.io/github/repo-size/KiLJ4EdeN/Realtime_FacialRecognition) [![Issue open](https://img.shields.io/github/issues/KiLJ4EdeN/Realtime_FacialRecognition)](https://img.shields.io/github/issues/KiLJ4EdeN/Realtime_FacialRecognition)
+[![Issue closed](https://img.shields.io/github/issues-closed/KiLJ4EdeN/Realtime_FacialRecognition
+
 Prerequisites:
 
 1 - Python
@@ -29,4 +32,3 @@ each folder name represents a person and inside that folder will be images relat
 5 - Run facerec_ipcamera_knn.py.
 
 6 - Use q to quit the stream anytime.
-
