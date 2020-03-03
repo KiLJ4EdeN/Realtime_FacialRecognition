@@ -4,6 +4,7 @@ Real time Facial Recognition using the face_recognition module and ip cameras.
 
 [![License](https://img.shields.io/github/license/KiLJ4EdeN/Realtime_FacialRecognition)](https://img.shields.io/github/license/KiLJ4EdeN/Realtime_FacialRecognition) [![Version](https://img.shields.io/github/v/tag/KiLJ4EdeN/Realtime_FacialRecognition)](https://img.shields.io/github/v/tag/KiLJ4EdeN/Realtime_FacialRecognition) [![Code size](https://img.shields.io/github/languages/code-size/KiLJ4EdeN/Realtime_FacialRecognition)](https://img.shields.io/github/languages/code-size/KiLJ4EdeN/Realtime_FacialRecognition) [![Repo size](https://img.shields.io/github/repo-size/KiLJ4EdeN/Realtime_FacialRecognition)](https://img.shields.io/github/repo-size/KiLJ4EdeN/Realtime_FacialRecognition) [![Issue open](https://img.shields.io/github/issues/KiLJ4EdeN/Realtime_FacialRecognition)](https://img.shields.io/github/issues/KiLJ4EdeN/Realtime_FacialRecognition)
 ![Issue closed](https://img.shields.io/github/issues-closed/KiLJ4EdeN/Realtime_FacialRecognition)
+
 Prerequisites:
 
 1 - Python
