@@ -205,6 +205,7 @@ if __name__ == "__main__":
             img = cv2.resize(frame, (0, 0), fx=0.5, fy=0.5)
             process_this_frame = process_this_frame + 1
             if process_this_frame % 30 == 0:
+               # hint: this is temporary image, and the latest prediction is shown on frames until another processing is done.
                 predictions1 = predict(img, model_path="trained_knn_model.clf")
 
             frame = show_prediction_labels_on_image(frame, predictions1)
