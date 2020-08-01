@@ -238,21 +238,20 @@ if __name__ == "__main__":
     print('Setting cameras up...')
     # multiple cameras can be used with the format url = 'http://username:password@camera_ip:port'
     url = 'http://admin:admin@192.168.0.106:8081/'
-    cap = cv2.VideoCapture(url)
+    stream = WebcamVideoStream(src=url).start()
+    time.sleep(1.0)
     while 1 > 0:
-        ret, frame = cap.read()
-        if ret:
-            # Different resizing options can be chosen based on desired program runtime.
-            # Image resizing for more stable streaming
-            img = cv2.resize(frame, (0, 0), fx=0.5, fy=0.5)
-            process_this_frame = process_this_frame + 1
-            if process_this_frame % 30 == 0:
-               # hint: this is temporary image, and the latest prediction is shown on frames until another processing is done.
-                predictions1 = predict(img, model_path="trained_knn_model.clf")
+        stream = cap.read()
+	# Different resizing options can be chosen based on desired program runtime.
+	# Image resizing for more stable streaming
+	img = cv2.resize(frame, (0, 0), fx=0.5, fy=0.5)
+	process_this_frame = process_this_frame + 1
+	if process_this_frame % 30 == 0:
+	# hint: this is temporary image, and the latest prediction is shown on frames until another processing is done.
+	predictions1 = predict(img, model_path="trained_knn_model.clf")
 
-            frame = show_prediction_labels_on_image(frame, predictions1)
-            cv2.imshow('camera', frame)
-            if ord('q') == cv2.waitKey(10):
-                cap.release()
-                cv2.destroyAllWindows()
-                exit(0)
+	frame = show_prediction_labels_on_image(frame, predictions1)
+	cv2.imshow('camera', frame)
+	if ord('q') == cv2.waitKey(10):
+		cv2.destroyAllWindows()
+		exit(0)
