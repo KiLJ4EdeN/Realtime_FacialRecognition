@@ -238,10 +238,10 @@ if __name__ == "__main__":
     print('Setting cameras up...')
     # multiple cameras can be used with the format url = 'http://username:password@camera_ip:port'
     url = 'http://admin:admin@192.168.0.106:8081/'
-    stream = WebcamVideoStream(src=url).start()
+    cap = WebcamVideoStream(src=url).start()
     time.sleep(1.0)
     while 1 > 0:
-        stream = cap.read()
+        frame = cap.read()
 	# Different resizing options can be chosen based on desired program runtime.
 	# Image resizing for more stable streaming
 	img = cv2.resize(frame, (0, 0), fx=0.5, fy=0.5)
